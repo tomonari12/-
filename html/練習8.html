@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            width: 200px;
+            height: 50px;
+            margin: 50px;
+            padding: 20px;
+            background-color: lightgreen;
+            overflow: hidden;
+            border: 2px solid blue;
+        }
+        div {
+            position:absolute;  /* すべてのdivをtop/leftで絶対位置指定　*/
+        }
+        #panel {    /*質問用パネルの大きさと位置の指定*/
+            left: 100px;
+            top: 50px;
+            width: 300px;
+            height: 100px;
+            background-color: lightgreen;
+        }
+        .button {   /*パネル上のボタンに共通なスタイル指定*/
+            width: 50px;
+            height: 25px;
+            color: white;
+            background-color: blue;
+            border: 5px solid yellow;
+            text-align: center;
+            font-size: 24px;
+        }
+        .yes {  /*yesボタン固定の指定*/
+            top: 20px; left: 70px;
+        }
+        .no {   /*noボタン固定の指定*/
+            top: 20px; left: 200px;
+        }
+    </style>
+</head>
+<body>
+    The quick brown fox jumps over the lazy dog.
+    <p>
+    The quick brown fox jumps over the lazy dog.
+    The quick brown fox jumps over the lazy dog.
+    The quick brown fox jumps over the lazy dog.
+    The quick brown fox jumps over the lazy dog.
+    The quick brown fox jumps over the lazy dog.
+    </p>
+    The quick brown fox jumps over the lazy dog.
+    <div id="panel">
+        <div class="button yes">Yes</div>
+        <div class="button no">No</div>
+    </div>
+</body>
+</html>

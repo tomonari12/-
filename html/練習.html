@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイトル</title>
+    <style></style>
+    <script>
+        function init() {
+            var a = 3, b = 3, c =5;
+            var x = (a == b);
+            var y = (a != b);
+            var z = (a < b);
+            var p = (a > b);
+            var q = (a <= b);
+            var r = (a >= b);
+            var str = "x=" + x + ",y=" + y +",z=" + z;
+
+            document.getElementById("info").textContent = str;
+        }
+    </script>
+</head>
+<body onload="init()">
+    <h1>練習</h1>
+    <p>これは<b>パラグラフ</b>です</p>
+    <p id="info"></p>
+</body>
+</html>
